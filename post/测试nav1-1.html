@@ -15,17 +15,17 @@
   <!-- if page has tags, then add tags to keyword -->
   
   
-  <meta name="keywords" content="Kekeee,Kekeee的博客,极客兔兔的小站,">
+  <meta name="keywords" content="Kekeee,Kekeee的博客,极客兔兔的小站,222,">
   <!-- page.description has higher priority -->
-  <meta name="description" content="极客兔兔的小站，致力于分享一些技术教程和有趣的技术实践。">
+  <meta name="description" content="Kekeee的Blog,learing...">
   <link rel="shortcut icon" href="/img/icon.png">
   <title>
     
-    关于我 | Kekeee
+    22222 | Kekeee
     
   </title>
 
-  <link rel="canonical" href="https://kekeee.com/post/link.html">
+  <link rel="canonical" href="https://kekeee.com/post/测试nav1-1.html">
   
 <link rel="stylesheet" href="/css/geektutu.css">
 
@@ -99,7 +99,7 @@
             <ul>
                 
                 
-                <li class="gkt-cate-name float-left ">
+                <li class="gkt-cate-name float-left active">
                     <a class="float-left" href="/post/测试nav1-1.html">22222-nav</a>
                     
                 </li>
@@ -141,32 +141,31 @@
 <div class="float-left post-container box-shadow">
     <div class="u-arrow-wrapper hidden-xs">
         
+        <a class="float-left" href="/post/about.html"><i class="u-arrow-left"></i></a>
         
-        <a class="float-right" href="/post/about.html"><i class="u-arrow-right"></i></a>
+        
+        <a class="float-right" href="/post/hello-world.html"><i class="u-arrow-right"></i></a>
         
     </div>
     <article class="col-xs-12">
-        <h1> 关于我 </h1>
+        <h1> 22222 </h1>
         
+        
+        <div class="hidden-lg hidden-md series_links">
+            <p> <strong> 333系列文章链接：</strong></p>
+            <ul>
+                
+                <li>
+                    <a href="/post/测试nav1-1.html">22222</a>
+                    <span class="post-item-date">(Mar 4, 2021)</span>
+                </li>
+                
+            </ul>
+        </div>
         
         
         <div class="gkt-article-start"></div>
-        <table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="www.baidu.com">百度</a></td>
-<td>111</td>
-</tr>
-<tr>
-<td><a target="_blank" rel="noopener" href="https://www.google.com/">谷歌</a></td>
-<td>222</td>
-</tr>
-</tbody></table>
+        <p>22wd<br><img src="https://img.draveness.me/2021-02-28-16145096642979-garbage-collector-types.png" alt="upload successful"></p>
 
         
 <script src="/js/qrious.min.js"></script>
@@ -176,13 +175,22 @@
         <div>
             
             <p>
-                <span>本文发表于 2017-07-03，最后修改于 2021-03-04。</span>
+                <span>专题: </span>
+                
+                <a href="/series/#333">
+                    <code key="333" class="post-label">333</code>
+                </a>
+                
+            </p>
+            
+            <p>
+                <span>本文发表于 2021-03-04，最后修改于 2021-03-04。</span>
             </p>
             <!-- 文章末尾的提示 start -->
             
             <p>
                 本站永久域名「 <a
-                        href="/post/link.html">kekeee.com</a>
+                        href="/post/测试nav1-1.html">kekeee.com</a>
                     」，也可搜索「 Kekeee 」找到我。
             </p>
             
@@ -193,8 +201,10 @@
         <hr />
         <p name="pagination" style="font-size: 1.2em">
     
+    <a class="float-left" href="/post/about.html">上一篇 « 关于我</a>
     
-    <a class="float-right" href="/post/about.html">下一篇 » 关于我</a>
+    
+    <a class="float-right" href="/post/hello-world.html">下一篇 » Hello World</a>
     
 </p>
     </article>
@@ -616,6 +626,62 @@
 </div></section>
         
         
+        <section class="gkt-sidebar-content box-shadow">
+            <strong>333</strong>
+            <ul>
+                
+                <li>
+                    <a href="/post/测试nav1-1.html"
+                        class="gkt-sidebar-active">22222</a>
+                    
+                    <!-- Table of Contents -->
+<div id="sidebar-toc">
+  <!-- TOC  -->
+  
+  
+</div>
+
+<script>
+  (function () {
+    var h2 = document.querySelectorAll('article h2');
+    var h3 = document.querySelectorAll('article h3');
+    var linkList = document.querySelectorAll('#sidebar-toc a');
+
+    function findLinkElement(name) {
+      for (var i = 0; i < linkList.length; i++) {
+        var items = linkList[i].href.split('#');
+        if (items && items[items.length - 1] === encodeURIComponent(name)) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function activeLink(titleList) {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = titleList.length - 1; i >= 0; i--) {
+        if (scrollTop - titleList[i].offsetTop > 0) {
+          var index = findLinkElement(titleList[i].id);
+          index != -1 && linkList[index].classList.add('gkt-sidebar-active');
+          break;
+        }
+      }
+    }
+
+    window.addEventListener("scroll", function (e) {
+      [].slice.call(linkList).forEach(function (link) {
+        link.classList.remove('gkt-sidebar-active');
+      })
+      activeLink(h2);
+    })
+  })();
+</script>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        
         
         <section class="gkt-sidebar-content box-shadow">
             <strong>最近的文章</strong>
@@ -631,10 +697,6 @@
                 
                 <li>
                     <a href="/post/link.html">关于我</a>
-                </li>
-                
-                <li>
-                    <a href="/post/about.html">关于我</a>
                 </li>
                 
             </ul>
